@@ -49,10 +49,7 @@ def validateExternalID(dataframe):
           print(row[idx]) # prints row information at given index
           validateDate(row[idx])
 
-    else: # else statement to close for loop
-      print("something went wrong")
-      # print(f"row: {row}")
-      break
+
 
 '''
 This function is used inside the validateExternalID function to parse and check the dates are valid
@@ -78,9 +75,11 @@ def validateDate(externalID):
 
   if dateObject.date() >= today.date():
     print("Booking is for the future, valid.")
+    print("")
   else:
-    print(dateObject.date())
+    # print(dateObject.date())
     print(f"Booking is in the past. {externalID} is invalid.")
+    print("")
 
 
 
