@@ -50,7 +50,7 @@ def validateExternalID(dataframe):
           validateDate(row[idx])
 
     else: # else statement to close for loop
-      # print("not found")
+      print("something went wrong")
       # print(f"row: {row}")
       break
 
